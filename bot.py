@@ -25,18 +25,13 @@ def start(message):
         "✨ Выбери нужный пункт меню ниже.\n\n"
         "ℹ️ Демоверсия: VPN-подключение пока не настроено.",
         reply_markup=keyboard
-    
+    )
+
 
 @bot.message_handler(func=lambda message: True)
 def menu(message):
     if message.text == "💎 Тарифы":
-    answer = (
-        "💎 OPG VPN — тарифы\n\n"
-        "🎁 Пробный период: 3 дня\n"
-        "⭐ Подписка: 100 Stars / 30 дней\n\n"
-        "🔧 Оплата и VPN-подключение пока настраиваются.\n"
-        "Покупка сейчас недоступна."
-    )
+        answer = "💎 Тарифы пока готовятся."
     elif message.text == "🆘 Поддержка":
         answer = "🆘 Поддержка скоро появится."
     elif message.text == "🔌 Подключить VPN":
