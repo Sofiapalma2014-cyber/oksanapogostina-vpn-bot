@@ -30,8 +30,6 @@ def start(message):
 
 @bot.message_handler(func=lambda message: True)
 def menu(message):
-    if message.text == "💎 Тарифы":
-    answer = (
         "💎 OPG VPN — тарифы\n\n"
         "🎁 Пробный период: 3 дня\n"
         "⭐ Подписка: 100 Stars / 30 дней\n\n"
