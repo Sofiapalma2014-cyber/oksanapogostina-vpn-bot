@@ -25,8 +25,7 @@ def start(message):
         "✨ Выбери нужный пункт меню ниже.\n\n"
         "ℹ️ Демоверсия: VPN-подключение пока не настроено.",
         reply_markup=keyboard
-    )
-
+    
 
 @bot.message_handler(func=lambda message: True)
 def menu(message):
